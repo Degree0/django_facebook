@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+{{ name }}님({{age}}) 안녕하세요?
+<br/>
+
+
+<h1>오늘의 일기</h1>
+
+/* html내에 파이썬을 쓰겠다는 표시 */
+{% for post in diary %}
+<h4>{{ post }}</h4>
+{% endfor %}
+
+<br/>
+</body>
+
+</html>
