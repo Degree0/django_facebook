@@ -93,7 +93,7 @@ def new_feed(request):
 
     if request.method == 'POST':
         Article.objects.create(
-            author = request.POST['nickname'],
+            author = request.POST['author'],
             title = request.POST['title'],
             text = request.POST['content'] + ps,
             password = request.POST['password']
